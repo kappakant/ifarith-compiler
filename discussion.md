@@ -27,9 +27,23 @@ especially how it is different than x86: what are the pros and cons of
 using ir-virtual as a representation? You can get the compiler to to
 compile ir-virtual files like so: 
 
+program1:
+
+((move-lit rax 5) (move-lit rdx 6) (add rax rdx)  (print rdx) )
+
+program2:
+((move-lit rax 6) (mov-lit rdx 7) (sub rdx rax) (print rdx) ) 
+
+program3: 
+((move-lit rax 7) (mov-lit rdx 8) (mul rdx rax) (print rdx) )
+
+
+
 racket compiler.rkt -v test-programs/sum1.irv 
 
 (Also pass in -m for Mac)
+
+some of the pros is that it is a much easier to understand and implement then regular assembly. Some other pros are that it is much safer to run a sudo assembly then directly running it on your machine. Some cons are you have to define every input and output where as with assebly it is already predefined.  
 
 [ Question 2 ] 
 
