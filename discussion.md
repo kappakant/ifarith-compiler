@@ -63,6 +63,22 @@ carefully the relevance of each of the intermediate representations.
 For this question, please add your `.ifa` programs either (a) here or
 (b) to the repo and write where they are in this file.
 
+50.ifa in test-programs. 
+
+```
+Input source tree in IfArith:
+50
+ifarith-tiny:
+50
+50
+anf:
+'(let ((x1254 50)) x1254)
+ir-virtual:
+'(((label lab1255) (mov-lit x1254 50)) (return x1254))
+```
+
+x86 output can be found in test-programs/50.asm
+
 [ Question 3 ] 
 
 Describe each of the passes of the compiler in a slight degree of
