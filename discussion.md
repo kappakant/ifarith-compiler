@@ -43,7 +43,7 @@ racket compiler.rkt -v test-programs/sum1.irv
 
 (Also pass in -m for Mac)
 
-some of the pros is that it is a much easier to understand and implement then regular assembly. Some other pros are that it is much safer to run a sudo assembly then directly running it on your machine. Some cons are you have to define every input and output where as with assebly it is already predefined.  
+some of the pros is that it is a much easier to understand and implement then regular assembly. Some other pros are that it is much safer to run a sudo assembly then directly running it on your machine. Some cons are you have to define every input and output where as with assebly it is already predefined.  Over all id say that working with a sudo asembely is much more forgiving then working directely with assemebely, it allows you to make a lot more mistakes, and be able to rectify them in a very safe enviorment, also with assembely you may inevertanly cause a segmentation fault, or you may spit out an incorrect number but it still gives a number. In sudo assembely it is much more obvious when you make a little mistake or error, and being able to change it and notice that the small erorrs occur is defintely a big pro for sudo assembely. A con for using sudo is that you don't gain direct experience working with assembely, it may be a safer enviorment to work in but you do not gain experience that you would gain from working directely with assemebely, wether it preventing segmentation faults or determening what might have caused them in the first place. 
 
 [ Question 2 ] 
 
