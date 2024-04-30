@@ -153,6 +153,8 @@ ask me.
 Your team will receive a small bonus for being the first team to
 report a unique bug (unique determined by me).
 
+A potential error I beieve may come from the anf->ir-ivrtual e) funtion interacting with the pattern matching from the (virtual-instr?) funtion. In the virtual-instr? funtion the check is for mul which is the sudo assembly equaibalent to mul in. imul is the signed multiply, where as mul is just the regular multiple. So a slight difference in the understanding of how each works and executes. 
+
 [ High Level Reflection ] 
 
 In roughly 100-500 words, write a summary of your findings in working
