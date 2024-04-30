@@ -101,7 +101,7 @@ definition of what an idiom is: think carefully about whether you see
 any pattern in this code that resonates with you from earlier in the
 semester.
 
-My beloved pattern-matching is used to great effect in this project. It does well to hide the stink inherent in such repetitive decision-trees.
+My beloved pattern-matching is used to great effect in this project. In almost every function there is pattern matching, it is used to great effect in this project. We alos often used pattern matching in class and in projects. It was one of the earliest things that we learned, and are often still using. It does well to hide the stink inherent in such repetitive decision-trees.
 
 [ Question 5 ] 
 
