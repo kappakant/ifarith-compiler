@@ -103,11 +103,9 @@ anf:
 ir-virtual:
 '(((label lab1256) (mov-lit x1255 60)) (return x1255))
 ```
-x86 outputs can be found in test-programs/40.asm, test-programs/50.asm, test-programs/60.asm.
+In the case of 60.ifa, 60 is not syntactic sugar for anything, and can purely be translated into ifarith-tiny.
 
-IfArith-Tiny is important because the next compiler is not defined for certain syntax in IfArith that could equivalently be defined as syntactic sugar for more base operations. In the case of 60.ifa, 60 is a literal number and already works for IfArith-Tiny.
-
-ANF (Admministrative Normal Form) partitions the expressions into atomic and complex expressions. This is important because it clarifies the required processing order for the code, which makes further compilation into assembly smoother.
+ANF (Administrative Normal Form) partitions the expressions into atomic and complex expressions and outputs a clear order of operations. It doesn't really matter for the case of 60.ifa as there is but one operation.
 
 For ir-virtual, one issue from not using it is that nesting isn't really possible normally. The solution ir-virtual provides is placing subexpressions into registers, virtually. Baring large computations that could cause issues if there are not enough registers, but otherwise nesting is solved.
 
@@ -122,6 +120,12 @@ there could be more?
 
 In answering this question, you must use specific examples that you
 got from running the compiler and generating an output.
+
+IfArith-Tiny is important because the next compiler is not defined for certain syntax in IfArith that could equivalently be defined as syntactic sugar for more base operations. In the case of 60.ifa, 60 is a literal number and already works for IfArith-Tiny. For another example, cond1.ifa goes through extensive editing until it outputs a nested if statement, as that has defined outputs for the next compilers. 
+
+ANF (Administrative Normal Form) partitions the expressions into atomic and complex expressions. This is important because it clarifies the required processing order for the code, which makes further compilation into assembly smoother. Let's take cond1.ifa again for an example, in the ANF form it turns from a jumble of parenthesese and subexpressions into one long let block. The order is clear, because there is but one possible order.
+
+Cond1.ifa has a lot of nested subexpressions, which can be seen in ir-virtual's aggressive relabeling. As cond1.ifa includes several subexpressions such as (* 2 3), the ability to first slot that subexpression into a virtual register smooths out computation after compilation.
 
 [ Question 4 ] 
 
