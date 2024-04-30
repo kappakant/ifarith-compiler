@@ -133,7 +133,7 @@ definition of what an idiom is: think carefully about whether you see
 any pattern in this code that resonates with you from earlier in the
 semester.
 
-My beloved pattern-matching is used to great effect in this project. In almost every function there is pattern matching, it is used to great effect in this project. So as in lit? using match to check, for true and false, as well as interget.  We also often used pattern matching in class and in projects. It was one of the earliest things that we learned, and are often still using. It does well to hide the stink inherent in such repetitive decision-trees. Tail calls are also used in this project but not quite as often as pattern matching is. An example of a tail call function is (ifarith-tiny->anf e) this is used in tandem with some pattern matching in the same funtion. Tail recursion is also often used in class, and in projects. 
+My beloved pattern-matching is used to great effect in this project. In almost every function there is pattern matching, it is a highly verstile way of checking for what you need. as an example of pternmatching, in lit? using match to check, for true and false, as well as interget.  We also often used pattern matching in class and in projects. It was one of the earliest things that we learned, and are often still using. It does well to hide the stink inherent in such repetitive decision-trees. Tail calls are also used in this project but not quite as often as pattern matching is. An example of a tail call function is (ifarith-tiny->anf e) this is used in tandem with some pattern matching in the same funtion. Tail recursion is also often used in class, and in projects. 
 
 [ Question 5 ] 
 
