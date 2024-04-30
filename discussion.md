@@ -63,8 +63,22 @@ carefully the relevance of each of the intermediate representations.
 For this question, please add your `.ifa` programs either (a) here or
 (b) to the repo and write where they are in this file.
 
-50.ifa in test-programs. 
+40.ifa, 50.ifa, 60.ifa in test-programs. 
 
+40.ifa example:
+```
+Input source tree in IfArith:
+40
+ifarith-tiny:
+40
+40
+anf:
+'(let ((x1255 40)) x1255)
+ir-virtual:
+'(((label lab1256) (mov-lit x1255 40)) (return x1255))
+```
+
+50.ifa example:
 ```
 Input source tree in IfArith:
 50
@@ -77,7 +91,25 @@ ir-virtual:
 '(((label lab1255) (mov-lit x1254 50)) (return x1254))
 ```
 
-x86 output can be found in test-programs/50.asm
+60.ifa example:
+```
+Input source tree in IfArith:
+60
+ifarith-tiny:
+60
+60
+anf:
+'(let ((x1255 60)) x1255)
+ir-virtual:
+'(((label lab1256) (mov-lit x1255 60)) (return x1255))
+```
+x86 outputs can be found in test-programs/40.asm, test-programs/50.asm, test-programs/60.asm.
+
+IfArith-Tiny is important because the next compiler is not defined for certain syntax in IfArith that could equivalently be defined as syntactic sugar for more base operations. In the case of 60.ifa, 60 is a literal number and already works for IfArith-Tiny.
+
+ANF (Admministrative Normal Form) partitions the expressions into atomic and complex expressions. This is important because it clarifies the required processing order for the code, which makes further compilation into assembly smoother.
+
+For ir-virtual, one issue from not using it is that nesting isn't really possible normally. The solution ir-virtual provides is placing subexpressions into registers, virtually. Baring large computations that could cause issues if there are not enough registers, but otherwise nesting is solved.
 
 [ Question 3 ] 
 
