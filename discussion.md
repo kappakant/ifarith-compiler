@@ -165,3 +165,4 @@ nuts and bolts of code, try to use this experience as a way to think
 about how you would approach doing group code critique. What would you
 do differently next time, what did you learn?
 
+We found seeing the compilation of the files after inputting in our answer to be somewhat intersiting, like solving a puzzle and seeing the larger picture. We found using git to be somwewhat challening, but overall was a great introduction to it. Some minor issues arrised when we were editting the same file, or interacting with the same file. Next time I would have assinged each group a certain amount of time to try and understand what the code does, and would try and use our gathered information before we started diving into the code as a group, allowing us to come to a better understanding faster and allowing the answer to be reached in a quicker manner.
