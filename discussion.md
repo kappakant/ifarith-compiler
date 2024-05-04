@@ -171,3 +171,4 @@ nuts and bolts of code, try to use this experience as a way to think
 about how you would approach doing group code critique. What would you
 do differently next time, what did you learn?
 
+  We learned how to better work with others in a group code settings, typical diving in straight away was either of our strategys, but with a group porject it was a lot better to plan first what each of us was going to do, either together or sperately. We found that ifa file transaltion to be very interesting, as well as the sudo assembely code. Trying to apporach a critique in the best way I think would either fall down to effecinecy or simplicity. 
