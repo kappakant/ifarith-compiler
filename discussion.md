@@ -159,6 +159,7 @@ report a unique bug (unique determined by me).
 
 A potential error I beieve may come from the anf->ir-ivrtual e) funtion interacting with the pattern matching from the (virtual-instr?) funtion. In the virtual-instr? funtion the check is for mul which is the sudo assembly equaibalent to mul in. imul is the signed multiply, where as mul is just the regular multiple. So a slight difference in the understanding of how each works and executes. 
 
+Another inconsistency is that ifarith? allows for applications of any bop?. However, bop? defines '<< '>> as being valid binary operations, despite there being no provisions in the code to account for '<<, '>>, or even for '< or '>. If someone tried to compile valid ifarith code that contained a comparison of that sort, they would get an error.
 
 
 [ High Level Reflection ] 
